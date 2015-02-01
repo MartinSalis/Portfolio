@@ -1533,4 +1533,28 @@ body .main-container .contact-container form fieldset input[type=submit] {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  body .main-container {
+    padding: 10px !important;
+    overflow-y: visible;
+  }
+  body .main-container .header {
+    display: none;
+  }
+  body .main-container .content-section {
+    height: auto !important;
+    padding: 0;
+  }
+  body .main-container .pres-pic {
+    display: none;
+  }
+  body .main-container .presentation {
+    width: 100%;
+    padding: 0 !important;
+  }
+  body .main-container .presentation h1 {
+    font-size: 30px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
