@@ -12,12 +12,11 @@
 	<body>
 		<div class="main-container col col-12">
 			<div class="header col col-12">
-				<ul class="col col-7 push-5">
-					<li><a class="home" href="#">ACCUEIL</a></li>
-					<li><a class="cursus" href="#">PARCOURS</a></li>
-					<li><a class="skills" href="#">COMPÉTENCES</a></li>
-					<li><a class="projects" href="#">PROJETS & HOBBIES</a></li>
-					<li><a class="contact" href="#">CONTACT</a></li>
+				<ul class="col col-6 push-6">
+					<li><a id="home" class="current" href="#">ACCUEIL</a></li>
+					<li><a id="cursus" href="#">PARCOURS</a></li>
+					<li><a id="skills" href="#">COMPÉTENCES</a></li>
+					<li><a id="contact" href="#">CONTACT</a></li>
 				</ul>
 			</div>
 			<div id="home-container" class="content-section col col-12" >
@@ -36,53 +35,53 @@
 				</div>
 			</div>
 
-			<div id="cursus-container" style="background-color : #c4c4c4" class="content-section col col-12">
-				<div class="col col-6">
+			<div id="cursus-container" class="content-section col col-12">
+				<div class="cursus-details col col-6">
 					<h2>Mon parcours</h2>
 					<ul>
 						<li>
 							<div>
-								<h3>DUT Services et Réseaux de communication (Actuel MMI)</h3>
+								<h3><strong>DUT Services et Réseaux de communication (Actuel MMI)</strong></h3>
 								<p>IUT 1 de Grenoble</p>
 								<p>Septembre 2013 - Juin 2014</p>
 							</div>
 						</li>
 						<li>
 							<div>
-								<h3>Cursus DUT Informatique</h3>
+								<h3><strong>Cursus DUT Informatique</strong></h3>
 								<p>IUT 2 de Grenoble</p>
 								<p>Septembre 2010 - Février 2013</p>
 							</div>
 						</li>
 						<li>
 							<div>
-								<h3>Baccalauréat Scientifique - Option Physique/Chimie</h3>
+								<h3><strong>Baccalauréat Scientifique - Option Physique/Chimie</strong></h3>
 								<p>Lycée Polyvalent Hector Berlioz - La Côte Saint André</p>
 								<p>Septembre 2006 - Juin 2010</p>
 							</div>
 						</li>
 					</ul>
 				</div>
-				<div class="col col-6">
+				<div class="professionnal-details col col-6">
 					<h2>Mon expérience professionnelle</h2>
 					<ul>
 						<li>
 							<div>
-								<h3>Alternance en agence de communication</h3>
+								<h3><strong>Alternance en agence de communication</strong></h3>
 								<p>INÉDITS L'Élan Créatif</p>
 								<p>Depuis juillet 2014</p>
 							</div>
 						</li>
 						<li>
 							<div>
-								<h3>Stage en agence de communication</h3>
+								<h3><strong>Stage en agence de communication</strong></h3>
 								<p>INÉDITS L'Élan Créatif</p>
 								<p>Avril 2014 - Juillet 2014</p>
 							</div>
 						</li>
 						<li>
 							<div>
-								<h3>Équipier chez Mc Donald's</h3>
+								<h3><strong>Équipier chez Mc Donald's</strong></h3>
 								<p>Mc Donald's S<span>t</span> Étienne de S<span>t</span> Geoirs</p>
 								<p>Été 2010 / Été 2011 / Février 2013 - Août 2013</p>
 							</div>
@@ -90,7 +89,7 @@
 					</ul>
 				</div>
 			</div>
-			<div id="skills-container" class="content-section col col-12">
+			<div id="skills-container" class="skills-container content-section col col-12">
 				<h2>Les langages et outils du barbu</h2>
 				<div class="languages col col-6">
 					
@@ -127,7 +126,6 @@
 							<div class="lvl">
 								<i class="fa fa-star"></i>
 								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
 							</div>
 						</li>
 						<li>
@@ -158,34 +156,22 @@
 				</div>
 				<div class="softwares col col-6">
 					<ul>
-						<li>DREAMWEAVER</li>
-						<li>SUBLIME TEXT</li>
-						<li>PHOTOSHOP</li>
-						<li>ILLUSTRATOR</li>
-						<li>INDESIGN</li>
-						<li>3DS MAX</li>
+						<li><img src="assets/img/softwares/dw.png"></li>
+						<li><img src="assets/img/softwares/st.png"></li>
+						<li><img src="assets/img/softwares/ps.png"></li>
+						<li><img src="assets/img/softwares/ai.png"></li>
+						<li><img src="assets/img/softwares/id.png"></li>
+						<li><img src="assets/img/softwares/3ds.png"></li>
 					</ul>
 				</div>
 
 			</div>
-			<div id="projects-container" class="content-section col col-12">
-				<div>
-					<h2>Mes projets</h2>
-					<div>Site Communautaire Airsoft</div>
-					<div>Mini-jeux en HTML</div>
-				</div>
-				<div>
-					<h2>Mes projets</h2>
-					<div>AIRSOFT</div>
-					<div>HANDBALL</div>
-					<div>MODELISME</div>
-				</div>
-			</div>
-			<div id="contact-container" class="content-section col col-12">
+			<div id="contact-container" class="contact-container content-section col col-12">
 				<h2>Contact</h2>
 				<form method="POST" action="">
 					<fieldset>
-						<input type="text" name="full_name" placeholder="NOM - PRÉNOM">
+						<input type="text" name="name" placeholder="NOM">
+						<input type="text" name="first_name" placeholder="PRÉNOM">
 						<input type="text" name="mail" placeholder="MAIL">
 						<textarea name="message" placeholder="MESSAGE"></textarea>
 					</fieldset>
@@ -202,10 +188,12 @@
 	
     			$(".header ul li a").bind("click", function(e){
 					e.preventDefault();
-					var lc = $(this).attr("class");
+					var lc = $(this).attr("id");
 					var cc = "#"+lc+"-container";
 					var st = $(cc).offset().top;
 					var speed = 400; // Durée de l'animation (en ms)
+					$(".header ul li a").removeClass("current");
+					$(this).addClass("current");
 					$('html, body').animate( { scrollTop: st }, speed).clearQueue();
 			        /*$(".header ul li a").removeClass('active');
 			        $(this).addClass('active');*/
