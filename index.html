@@ -7,56 +7,210 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link rel="stylesheet" href="assets/scss/style.css">
-	<!--<style>
-			.header
-			{
-				box-shadow : 0 5px 10px #000;
-				/*background-image : url(assets/img/fond-header.png);*/
-			}
-		</style>-->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<div class="main-container">
-			<div class="header">
-				<ul>
-					<li><a href="#">ACCUEIL</a></li>
-					<li><a href="#">PARCOURS</a></li>
-					<li><a href="#">COMPÉTENCES</a></li>
-					<li><a href="#">CONTACT</a></li>
+		<div class="main-container col col-12">
+			<div class="header col col-12">
+				<ul class="col col-7 push-5">
+					<li><a class="home" href="#">ACCUEIL</a></li>
+					<li><a class="cursus" href="#">PARCOURS</a></li>
+					<li><a class="skills" href="#">COMPÉTENCES</a></li>
+					<li><a class="projects" href="#">PROJETS & HOBBIES</a></li>
+					<li><a class="contact" href="#">CONTACT</a></li>
 				</ul>
 			</div>
-			<div class="top">
-				<div class="layers">
-
-					<img src="assets/img/top-layers/mountains.png">
-					<img src="assets/img/top-layers/layer2.png">
-					<img src="assets/img/top-layers/layer3.png">
-					<img src="assets/img/top-layers/layer1.png">
-					<div class="filter">
-						<img src="assets/img/logo.png">
-						<div class="presentation">
-							<h1>Bienvenue sur BearDev</h1>
-							<p>Bonjour, je m'appelle Martin SALIS, et je vous souhaite la bienvenue sur mon site !</p>
-							<p>Je suis étudiant à l'IUT 1 de Grenoble, et ma spécialité c'est le mobile. En effet, je suis en Licence Professionnelle Service Mobile et Interfaces Nomades (Oui, c'est plutôt long à lire, on optera donc pour LP SMIN).</p>
-							<p>Ceci est mon site CV, où vous pourrez voir ce que je sais faire, etc...</p>
-							<p>Je vous souhaite donc une agréable visite !</p>
-						</div>
-					</div>
+			<div id="home-container" class="content-section col col-12" >
+				<div class="col col-6">
+					<img src="assets/img/home-pic.png">
+				</div>
+				<div class="presentation col col-6">
+					<h1>Salut à vous explorateur de l'internet, et bienvenue sur BearDev !</h1>
+					<p>
+					BearDev, c'est avant tout le goût prononcé d'un certain Webdeveloper pour les jeux de mots, calembours et contrepétries en tout genres !<br/>
+					Mais pour rester dans un registre un poil plus sérieux, je vais tout d'abord me présenter :
+					</p>
+					<p>Je m'appelle Martin SALIS, j'ai 23 ans et je suis développeur web junior en alternance. Je suis actuellement en Licence Professionnelle Services Mobile et Interfaces Nomades à l'IUT 1 de Grenoble.</p>
+					<p>Pour être un peu plus explicite, mon travail consiste notamment à développer des sites web pour le compte de mes clients, mais surtout de pouvoir les adapter sur tous les supports que nous connaissons désormais (PC, tablettes, mobiles) et que nous utilisons régulièrement (et c'est ce qui vous permet, utilisateurs de smartphone, de consulter ce site sans avoir à zoomer pour lire).<br/>Outre le fait que ce soit plus pratique pour les utilisateurs, la visibilité d'un site où que l'on soit constitue une véritable problématique à l'heure où la technologie évolue à la vitesse de la lumière.</p>
+					<p><strong>Mais trève de bavardages ! Je vous laisse tranquillement découvrir tout cela plus en détails, et vous souhaite donc une bonne visite sur BearDev !</strong></p>
 				</div>
 			</div>
-			<div class="container" id="cursus">
-				<h2>Mon parcours</h2>
+
+			<div id="cursus-container" style="background-color : #c4c4c4" class="content-section col col-12">
+				<div class="col col-6">
+					<h2>Mon parcours</h2>
+					<ul>
+						<li>
+							<div>
+								<h3>DUT Services et Réseaux de communication (Actuel MMI)</h3>
+								<p>IUT 1 de Grenoble</p>
+								<p>Septembre 2013 - Juin 2014</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h3>Cursus DUT Informatique</h3>
+								<p>IUT 2 de Grenoble</p>
+								<p>Septembre 2010 - Février 2013</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h3>Baccalauréat Scientifique - Option Physique/Chimie</h3>
+								<p>Lycée Polyvalent Hector Berlioz - La Côte Saint André</p>
+								<p>Septembre 2006 - Juin 2010</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col col-6">
+					<h2>Mon expérience professionnelle</h2>
+					<ul>
+						<li>
+							<div>
+								<h3>Alternance en agence de communication</h3>
+								<p>INÉDITS L'Élan Créatif</p>
+								<p>Depuis juillet 2014</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h3>Stage en agence de communication</h3>
+								<p>INÉDITS L'Élan Créatif</p>
+								<p>Avril 2014 - Juillet 2014</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h3>Équipier chez Mc Donald's</h3>
+								<p>Mc Donald's S<span>t</span> Étienne de S<span>t</span> Geoirs</p>
+								<p>Été 2010 / Été 2011 / Février 2013 - Août 2013</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="skills-container" class="content-section col col-12">
+				<h2>Les langages et outils du barbu</h2>
+				<div class="languages col col-6">
+					
+					<ul>
+						<li>
+							<img src="assets/img/languages/html.png">
+							<div class="lvl">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+						</li>
+						<li>
+							<img src="assets/img/languages/css.png">
+							<div class="lvl">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+						</li>
+						<li>
+							<img src="assets/img/languages/php.png">
+							<div class="lvl">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+						</li>
+						<li>
+							<img src="assets/img/languages/sass.png">
+							<div class="lvl">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+						</li>
+						<li>
+							<img src="assets/img/languages/jquery.png">
+							<div class="lvl">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+						</li>
+						<li>
+							<img src="assets/img/languages/ajax.png">
+							<div class="lvl">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+						</li>
+						<li>
+							<img src="assets/img/languages/java.png">
+							<div class="lvl">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="softwares col col-6">
+					<ul>
+						<li>DREAMWEAVER</li>
+						<li>SUBLIME TEXT</li>
+						<li>PHOTOSHOP</li>
+						<li>ILLUSTRATOR</li>
+						<li>INDESIGN</li>
+						<li>3DS MAX</li>
+					</ul>
+				</div>
 
 			</div>
-			<div class="container" id="skills">
-				<h2>Mes compétences</h2>
-
+			<div id="projects-container" class="content-section col col-12">
+				<div>
+					<h2>Mes projets</h2>
+					<div>Site Communautaire Airsoft</div>
+					<div>Mini-jeux en HTML</div>
+				</div>
+				<div>
+					<h2>Mes projets</h2>
+					<div>AIRSOFT</div>
+					<div>HANDBALL</div>
+					<div>MODELISME</div>
+				</div>
 			</div>
-			<div class="container" id="contact">
+			<div id="contact-container" class="content-section col col-12">
 				<h2>Contact</h2>
-
+				<form method="POST" action="">
+					<fieldset>
+						<input type="text" name="full_name" placeholder="NOM - PRÉNOM">
+						<input type="text" name="mail" placeholder="MAIL">
+						<textarea name="message" placeholder="MESSAGE"></textarea>
+					</fieldset>
+					<fieldset>
+						<input type="submit" name="submit" value="ENVOYER">
+					</fieldset>
+					
+				</form>
 			</div>
 		</div>
-		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(e) {
+	
+    			$(".header ul li a").bind("click", function(e){
+					e.preventDefault();
+					var lc = $(this).attr("class");
+					var cc = "#"+lc+"-container";
+					var st = $(cc).offset().top;
+					var speed = 400; // Durée de l'animation (en ms)
+					$('html, body').animate( { scrollTop: st }, speed).clearQueue();
+			        /*$(".header ul li a").removeClass('active');
+			        $(this).addClass('active');*/
+				});
+			});
+		</script>
 	</body>
 </html>
